@@ -1,0 +1,26 @@
+cabal-version:   3.0
+name:            hstdlib
+version:         0.1.0.0
+license:         NONE
+author:          amhsm6@gmail.com
+maintainer:      amhsm6
+build-type:      Simple
+
+common warnings
+    ghc-options: -Wall
+
+library
+    import:           warnings
+
+    exposed-modules:  TDM
+
+    build-depends:    base ^>=4.18.2.1
+                    , mtl
+                    , lens
+                    , stm
+                    , aeson
+                    , haskell-tdlib
+
+    hs-source-dirs:   src
+
+    default-language: Haskell2010
